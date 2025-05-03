@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>person.png</file>
+        <file>password.png</file>
+        <file>email.png</file>
+        <file>back.png</file>
+        <file>calendar.png</file>
+        <file>location.png</file>
+    </qresource>
+</RCC>
