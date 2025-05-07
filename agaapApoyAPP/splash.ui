@@ -35,14 +35,14 @@
      <enum>QFrame::Shape::NoFrame</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page1Splash">
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
         <x>13</x>
-        <y>500</y>
+        <y>470</y>
         <width>271</width>
         <height>41</height>
        </rect>
@@ -72,13 +72,35 @@ QPushButton:hover {
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>-20</x>
-        <y>270</y>
-        <width>334</width>
-        <height>62</height>
+        <x>0</x>
+        <y>200</y>
+        <width>301</width>
+        <height>191</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0%);
+position:center;
+border:none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/image/logo.png</normaloff>:/image/logo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
        <item>
         <widget class="QLabel" name="label_2">
          <property name="font">
@@ -99,7 +121,7 @@ position:center;</string>
           <enum>QFrame::Shadow::Raised</enum>
          </property>
          <property name="text">
-          <string>AGAPP APOY</string>
+          <string>AGAPP</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -159,6 +181,9 @@ QPushButton:hover {
       </property>
       <property name="text">
        <string>Login</string>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
@@ -331,7 +356,7 @@ border-radius: 5px;
 height:30px;</string>
              </property>
              <property name="text">
-              <string>Email daw</string>
+              <string>Admin</string>
              </property>
             </widget>
            </item>

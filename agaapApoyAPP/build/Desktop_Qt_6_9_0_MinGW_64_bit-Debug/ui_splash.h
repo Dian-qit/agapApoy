@@ -34,6 +34,7 @@ public:
     QPushButton *pushButton;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
+    QPushButton *pushButton_10;
     QLabel *label_2;
     QLabel *label_3;
     QWidget *page2Login;
@@ -152,7 +153,7 @@ public:
         page1Splash->setObjectName("page1Splash");
         pushButton = new QPushButton(page1Splash);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(13, 500, 271, 41));
+        pushButton->setGeometry(QRect(13, 470, 271, 41));
         QFont font;
         font.setFamilies({QString::fromUtf8("Gadugi")});
         font.setPointSize(9);
@@ -169,10 +170,22 @@ public:
 ""));
         layoutWidget = new QWidget(page1Splash);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(-20, 270, 334, 62));
+        layoutWidget->setGeometry(QRect(0, 200, 301, 191));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButton_10 = new QPushButton(layoutWidget);
+        pushButton_10->setObjectName("pushButton_10");
+        pushButton_10->setStyleSheet(QString::fromUtf8("background-color: rgba(0,0,0,0%);\n"
+"position:center;\n"
+"border:none;"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/image/logo.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_10->setIcon(icon);
+        pushButton_10->setIconSize(QSize(120, 120));
+
+        verticalLayout->addWidget(pushButton_10);
+
         label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
         QFont font1;
@@ -304,9 +317,9 @@ public:
         pushButton_5->setObjectName("pushButton_5");
         pushButton_5->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        QIcon icon;
-        icon.addFile(QString::fromUtf8(":/image/email.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_5->setIcon(icon);
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/image/email.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_5->setIcon(icon1);
 
         horizontalLayout_2->addWidget(pushButton_5);
 
@@ -346,9 +359,9 @@ public:
         pushButton_7->setObjectName("pushButton_7");
         pushButton_7->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/image/password.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_7->setIcon(icon1);
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/image/password.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_7->setIcon(icon2);
         pushButton_7->setIconSize(QSize(25, 30));
 
         horizontalLayout_4->addWidget(pushButton_7);
@@ -399,9 +412,9 @@ public:
         pushButton_15->setObjectName("pushButton_15");
         pushButton_15->setGeometry(QRect(10, 50, 31, 29));
         pushButton_15->setStyleSheet(QString::fromUtf8("border:none;"));
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/image/back.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_15->setIcon(icon2);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/image/back.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_15->setIcon(icon3);
         layoutWidget4 = new QWidget(page3SignUp);
         layoutWidget4->setObjectName("layoutWidget4");
         layoutWidget4->setGeometry(QRect(10, 200, 271, 261));
@@ -432,9 +445,9 @@ public:
         pushButton_14->setObjectName("pushButton_14");
         pushButton_14->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/image/person.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_14->setIcon(icon3);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/image/person.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_14->setIcon(icon4);
         pushButton_14->setIconSize(QSize(25, 25));
 
         horizontalLayout_10->addWidget(pushButton_14);
@@ -475,7 +488,7 @@ public:
         pushButton_11->setObjectName("pushButton_11");
         pushButton_11->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        pushButton_11->setIcon(icon);
+        pushButton_11->setIcon(icon1);
 
         horizontalLayout_7->addWidget(pushButton_11);
 
@@ -515,7 +528,7 @@ public:
         pushButton_13->setObjectName("pushButton_13");
         pushButton_13->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        pushButton_13->setIcon(icon1);
+        pushButton_13->setIcon(icon2);
         pushButton_13->setIconSize(QSize(25, 30));
 
         horizontalLayout_9->addWidget(pushButton_13);
@@ -556,7 +569,7 @@ public:
         pushButton_12->setObjectName("pushButton_12");
         pushButton_12->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        pushButton_12->setIcon(icon1);
+        pushButton_12->setIcon(icon2);
         pushButton_12->setIconSize(QSize(25, 30));
 
         horizontalLayout_8->addWidget(pushButton_12);
@@ -650,7 +663,7 @@ public:
         pushButton_36->setObjectName("pushButton_36");
         pushButton_36->setGeometry(QRect(10, 48, 31, 29));
         pushButton_36->setStyleSheet(QString::fromUtf8("border:none;"));
-        pushButton_36->setIcon(icon2);
+        pushButton_36->setIcon(icon3);
         label_38 = new QLabel(page4SignUp);
         label_38->setObjectName("label_38");
         label_38->setGeometry(QRect(168, 160, 88, 16));
@@ -784,9 +797,9 @@ public:
         pushButton_33->setGeometry(QRect(10, 0, 24, 30));
         pushButton_33->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/image/calendar.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_33->setIcon(icon4);
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/image/calendar.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_33->setIcon(icon5);
 
         verticalLayout_10->addWidget(frame_26);
 
@@ -814,9 +827,9 @@ public:
         pushButton_34->setObjectName("pushButton_34");
         pushButton_34->setStyleSheet(QString::fromUtf8("border:none;\n"
 ""));
-        QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/image/location.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_34->setIcon(icon5);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/image/location.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        pushButton_34->setIcon(icon6);
         pushButton_34->setIconSize(QSize(25, 30));
 
         horizontalLayout_29->addWidget(pushButton_34);
@@ -838,7 +851,7 @@ public:
 
         retranslateUi(splash);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(splash);
@@ -848,16 +861,20 @@ public:
     {
         splash->setWindowTitle(QCoreApplication::translate("splash", "splash", nullptr));
         pushButton->setText(QCoreApplication::translate("splash", "Get Started", nullptr));
-        label_2->setText(QCoreApplication::translate("splash", "AGAPP APOY", nullptr));
+        pushButton_10->setText(QString());
+        label_2->setText(QCoreApplication::translate("splash", "AGAPP", nullptr));
         label_3->setText(QCoreApplication::translate("splash", "AGAP SA SUNOG, AGAP SA BUHAY", nullptr));
         loginButton->setText(QCoreApplication::translate("splash", "Login", nullptr));
+#if QT_CONFIG(shortcut)
+        loginButton->setShortcut(QCoreApplication::translate("splash", "Return", nullptr));
+#endif // QT_CONFIG(shortcut)
         label_5->setText(QCoreApplication::translate("splash", "Login to your Account", nullptr));
         pushButton_3->setText(QCoreApplication::translate("splash", "Forgot password?", nullptr));
         label_6->setText(QCoreApplication::translate("splash", "Don't have an account?", nullptr));
         pushButton_4->setText(QCoreApplication::translate("splash", "Sign Up", nullptr));
         label->setText(QCoreApplication::translate("splash", "Email", nullptr));
         pushButton_5->setText(QString());
-        loginUsernameLineEdit->setText(QCoreApplication::translate("splash", "Email daw", nullptr));
+        loginUsernameLineEdit->setText(QCoreApplication::translate("splash", "Admin", nullptr));
         label_4->setText(QCoreApplication::translate("splash", "Password", nullptr));
         pushButton_7->setText(QString());
         loginPasswordLineEdit->setText(QCoreApplication::translate("splash", "Password", nullptr));
